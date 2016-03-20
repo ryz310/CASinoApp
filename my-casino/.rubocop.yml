@@ -1,0 +1,48 @@
+Rails:
+  Enabled: true
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
+
+Style/Lambda:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/AndOr:
+  Enabled: false
+
+Style/RedundantReturn:
+  AllowMultipleReturnValues: true
+
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/Semicolon:
+  AllowAsExpressionSeparator: true
+
+Style/SpaceInsideStringInterpolation:
+  EnforcedStyle: space
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+# default: 15
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/LineLength:
+  Max: 128
+
+AllCops:
+  Exclude:
+    - app/views/*.haml
+    - db/schema.rb
+    - tmp/**/*
