@@ -32,5 +32,9 @@ module MyCasinoClient
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    
+    config.rack_cas.session_store = RackCAS::ActiveRecordStore
+    config.rack_cas.extra_attributes_filter = %w(email fullname)
+    config.rack_cas.renew = true
   end
 end
