@@ -40,4 +40,5 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   config.rack_cas.server_url = 'http://localhost:3000/'
+  config.rack_cas.verify_ssl_cert = false
 end
